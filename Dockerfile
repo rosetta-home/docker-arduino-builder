@@ -1,6 +1,6 @@
 FROM java:8
 
-ENV ARDUINO_IDE_VERSION 1.6.9
+ENV ARDUINO_IDE_VERSION 1.8.2
 
 RUN apt-get update && apt-get install -y wget xz-utils
 RUN wget -q -O- https://downloads.arduino.cc/arduino-${ARDUINO_IDE_VERSION}-linux64.tar.xz | tar xJ -C /opt
